@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "questionText": "bulbasaur",
+    "answerOptions": [
+      { "responseText": "uno", "isTrue": "false" },
+      { "responseText": "dos", "isTrue": "false" },
+      { "responseText": "cuatro", "isTrue": "true" }
+    ]
+  },
+  {
+    "id": 2,
+    "questionText": "ivysaur",
+    "answerOptions": [
+      { "responseText": "uno", "isTrue": "false" },
+      { "responseText": "dos", "isTrue": "false" },
+      { "responseText": "tres", "isTrue": "false" },
+      { "responseText": "cuatro", "isTrue": "true" }
+    ]
+  },
+  {
+    "id": 3,
+    "questionText": "venusaur",
+    "answerOptions": [
+      { "responseText": "uno", "isTrue": "false" },
+      { "responseText": "dos", "isTrue": "false" },
+      { "responseText": "tres", "isTrue": "false" },
+      { "responseText": "cuatro", "isTrue": "true" }
+    ]
+  },
+  {
+    "id": 4,
+    "questionText": "charmander",
+    "answerOptions": [
+      { "responseText": "uno", "isTrue": "false" },
+      { "responseText": "dos", "isTrue": "false" },
+      { "responseText": "tres", "isTrue": "false" },
+      { "responseText": "cuatro", "isTrue": "true" }
+    ]
+  },
+  {
+    "id": 5,
+    "questionText": "charmeleon",
+    "answerOptions": [
+      { "responseText": "uno", "isTrue": "false" },
+      { "responseText": "dos", "isTrue": "false" },
+      { "responseText": "tres", "isTrue": "false" },
+      { "responseText": "cuatro", "isTrue": "true" }
+    ]
+  },
+  {
+    "id": 6,
+    "questionText": "charizard",
+    "answerOptions": [
+      { "responseText": "uno", "isTrue": "false" },
+      { "responseText": "dos", "isTrue": "false" },
+      { "responseText": "tres", "isTrue": "false" },
+      { "responseText": "cuatro", "isTrue": "true" }
+    ]
+  },
+  {
+    "id": 7,
+    "questionText": "squirtle",
+    "answerOptions": [
+      { "responseText": "uno", "isTrue": "false" },
+      { "responseText": "dos", "isTrue": "false" },
+      { "responseText": "tres", "isTrue": "false" },
+      { "responseText": "cuatro", "isTrue": "true" }
+    ]
+  },
+  {
+    "id": 8,
+    "questionText": "wartortle",
+    "answerOptions": [
+      { "responseText": "uno", "isTrue": "false" },
+      { "responseText": "dos", "isTrue": "false" },
+      { "responseText": "tres", "isTrue": "false" },
+      { "responseText": "cuatro", "isTrue": "true" }
+    ]
+  },
+  {
+    "id": 9,
+    "questionText": "blastoise",
+    "answerOptions": [
+      { "responseText": "uno", "isTrue": "false" },
+      { "responseText": "dos", "isTrue": "false" },
+      { "responseText": "tres", "isTrue": "false" },
+      { "responseText": "cuatro", "isTrue": "true" }
+    ]
+  },
+  {
+    "id": 10,
+    "questionText": "caterpie",
+    "answerOptions": [
+      { "responseText": "uno", "isTrue": "false" },
+      { "responseText": "dos", "isTrue": "false" },
+      { "responseText": "tres", "isTrue": "false" },
+      { "responseText": "cuatro", "isTrue": "true" }
+    ]
+  }
+]
