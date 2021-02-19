@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import Quiz from "./Play/Quiz";
+import Result from "./Play/Result";
+// import { Route, Switch } from "react-router-dom";
 
 const Play = (props) => {
   let arr = props.arr;
@@ -45,38 +48,18 @@ const Play = (props) => {
   return (
     <>
       <section>
-        <h1>Holi</h1>
-        <div>
-          {showScore ? (
-            <p>Holiiii me he acabado</p>
-          ) : (
-            <p> {arr[currentQuestion].questionText}</p>
-            // <p>jeje</p>
-          )}
-        </div>
-        <div>
-          {showScore
-            ? ""
-            : arr[currentQuestion].answerOptions.map((answerOption, index) => (
-                <button
-                  key={index}
-                  disabled={disabled}
-                  onClick={() => handleAnswerButtonClick(answerOption.isTrue)}
-                >
-                  {answerOption.responseText}
-                </button>
-              ))}
-        </div>
-        <div>
-          {showScore ? (
-            ""
-          ) : (
-            <button onClick={() => handleNextQuestion(correct)}>
-              Siguiente Pregunta
-            </button>
-          )}
-        </div>
-        <button>¡Hemos llegado!</button>
+        <Quiz
+          showScore={showScore}
+          arr={arr}
+          currentQuestion={currentQuestion}
+          disabled={disabled}
+          handleAnswerButtonClick={handleAnswerButtonClick}
+        />
+        <Result
+          showScore={showScore}
+          handleNextQuestion={handleNextQuestion}
+          correct={correct}
+        />
       </section>
     </>
   );
