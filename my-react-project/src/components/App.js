@@ -21,7 +21,12 @@ function App() {
   return (
     <>
       <div id="App">
-        <Header pageWrapId={"page-wrap"} outerContainerId={"App"} />
+        <Header
+          disableAutoFocus
+          right
+          pageWrapId={"page-wrap"}
+          outerContainerId={"App"}
+        />
         <div id="page-wrap">
           <Switch>
             <Route exact path="/">

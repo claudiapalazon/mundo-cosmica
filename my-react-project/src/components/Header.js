@@ -6,7 +6,7 @@ const Header = (props) => {
   return (
     <Menu {...props}>
       <Link className="menu-item" to="/" title="Cósmica">
-        Cosmica
+        Cósmica
       </Link>
       <Link
         className="menu-item"
