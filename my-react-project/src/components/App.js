@@ -6,6 +6,7 @@ import Instructions from "./Instructions";
 import Play from "./Play";
 import Cosmica from "./Cosmica";
 import Header from "./Header";
+import "./styles.css";
 
 function App() {
   let arr = JSON.parse(JSON.stringify(questions));
@@ -19,18 +20,22 @@ function App() {
 
   return (
     <>
-      <Header />
-      <Switch>
-        <Route exact path="/">
-          <Cosmica />
-        </Route>
-        <Route path="/instrucciones">
-          <Instructions />
-        </Route>
-        <Route path="/jugar">
-          <Play arr={arrFiltered} handleQuestions={handleQuestions} />
-        </Route>
-      </Switch>
+      <div id="App">
+        <Header pageWrapId={"page-wrap"} outerContainerId={"App"} />
+        <div id="page-wrap">
+          <Switch>
+            <Route exact path="/">
+              <Cosmica />
+            </Route>
+            <Route path="/instrucciones">
+              <Instructions />
+            </Route>
+            <Route path="/jugar">
+              <Play arr={arrFiltered} handleQuestions={handleQuestions} />
+            </Route>
+          </Switch>
+        </div>
+      </div>
     </>
   );
 }

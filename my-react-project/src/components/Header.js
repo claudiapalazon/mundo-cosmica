@@ -1,19 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { slide as Menu } from "react-burger-menu";
 
-const Header = () => {
+const Header = (props) => {
   return (
-    <header>
-      <Link to="/" title="Cósmica">
+    <Menu {...props}>
+      <Link className="menu-item" to="/" title="Cósmica">
         Cosmica
       </Link>
-      <Link to="/instrucciones" title="Instrucciones">
+      <Link
+        className="menu-item"
+        // target="_blank"
+        to="/instrucciones"
+        title="Instrucciones"
+      >
         Instrucciones
       </Link>
-      <Link to="/jugar" title="Jugar a Cósmica">
+      <Link className="menu-item" to="/jugar" title="Jugar a Cósmica">
         Jugar
       </Link>
-    </header>
+    </Menu>
   );
 };
 
