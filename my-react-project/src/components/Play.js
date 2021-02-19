@@ -9,8 +9,8 @@ const Play = (props) => {
 
   const [currentQuestion, setCurrentQuestion] = useState(aleatorio);
   const [showScore, setShowScore] = useState(false);
-  const [disabled, isDisabled] = useState(false);
   const [correct, isCorrect] = useState(false);
+  const [showPage, isAnswered] = useState(false);
 
   const handleNextQuestion = (correct) => {
     console.log(arr);
@@ -21,7 +21,6 @@ const Play = (props) => {
     if (arr.length < 1) {
       setShowScore(true);
       setCurrentQuestion(1);
-      isDisabled(false);
       isCorrect(false);
       props.handleQuestions();
     }
@@ -32,34 +31,40 @@ const Play = (props) => {
       }
       setCurrentQuestion(aleatory);
     }
-    isDisabled(false);
+    isAnswered(false);
+  };
+
+  const handleQuestions2 = () => {
+    setShowScore(false);
   };
 
   const handleAnswerButtonClick = (isTrue) => {
+    isAnswered(true);
     if (isTrue === "true") {
-      alert();
       isCorrect(true);
     } else {
       isCorrect(false);
     }
-    isDisabled(true);
   };
 
   return (
     <>
       <section>
-        <Quiz
-          showScore={showScore}
-          arr={arr}
-          currentQuestion={currentQuestion}
-          disabled={disabled}
-          handleAnswerButtonClick={handleAnswerButtonClick}
-        />
-        <Result
-          showScore={showScore}
-          handleNextQuestion={handleNextQuestion}
-          correct={correct}
-        />
+        {showPage ? (
+          <Result
+            showScore={showScore}
+            handleNextQuestion={handleNextQuestion}
+            correct={correct}
+          />
+        ) : (
+          <Quiz
+            showScore={showScore}
+            arr={arr}
+            currentQuestion={currentQuestion}
+            handleAnswerButtonClick={handleAnswerButtonClick}
+            handleQuestions={handleQuestions2}
+          />
+        )}
       </section>
     </>
   );

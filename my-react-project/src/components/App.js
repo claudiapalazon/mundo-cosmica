@@ -12,6 +12,7 @@ function App() {
   const [arrFiltered, setQuestion] = useState(arr);
 
   const handleQuestions = () => {
+    console.log("entro aqui");
     let arrQuestions = JSON.parse(JSON.stringify(questions));
     setQuestion(arrQuestions);
   };
