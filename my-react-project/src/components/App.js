@@ -11,11 +11,20 @@ import "./styles.css";
 function App() {
   let arr = JSON.parse(JSON.stringify(questions));
   const [arrFiltered, setQuestion] = useState(arr);
+  const [chatbotField, setChatbotField] = useState(1);
+  const [groupName, setGroupName] = useState("Compañeras");
 
   const handleQuestions = () => {
-    console.log("entro aqui");
     let arrQuestions = JSON.parse(JSON.stringify(questions));
     setQuestion(arrQuestions);
+  };
+
+  const handleChatbotField = (number) => {
+    setChatbotField(number);
+  };
+
+  const handleGroupName = (name) => {
+    setGroupName(name);
   };
 
   return (
@@ -30,7 +39,12 @@ function App() {
         <div id="page-wrap">
           <Switch>
             <Route exact path="/">
-              <Cosmica />
+              <Cosmica
+                chatbotField={chatbotField}
+                handleChatbotField={handleChatbotField}
+                groupName={groupName}
+                handleGroupName={handleGroupName}
+              />
             </Route>
             <Route path="/instrucciones">
               <Instructions />

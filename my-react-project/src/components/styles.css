@@ -42,7 +42,12 @@ body {
   width: 36px;
   height: 30px;
   right: 36px;
+  transition: transform 1s;
   top: 36px;
+}
+
+.bm-burger-button:hover {
+  transform: scale(1.2);
 }
 
 /* Color/shape of burger icon bars */
