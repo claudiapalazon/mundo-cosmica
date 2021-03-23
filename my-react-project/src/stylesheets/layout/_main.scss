@@ -1,0 +1,16 @@
+*::selection {
+  background: $purple;
+  color: $white;
+  // text-shadow: 1px 1px #fff;
+}
+
+#App {
+  font-family: $font-text;
+  height: 100vh;
+}
+
+#page-wrap {
+  text-align: center;
+  overflow: auto;
+  position: relative;
+}

@@ -1,36 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
-
-button:focus {
-  outline: 0;
-}
-
-html,
-body {
-  margin: 0;
-}
-
-#App {
-  font-family: "Roboto Mono", monospace;
-  height: 100vh;
-}
-
-#page-wrap {
-  text-align: center;
-  overflow: auto;
-  position: relative;
-}
-
 .bm-item {
   display: inline-block;
   /* Our sidebar item styling */
   text-decoration: none;
   margin-bottom: 10px;
-  color: white;
+  color: $white;
   transition: color 0.2s;
 }
 
 .bm-item:hover {
-  color: #f9b623;
+  color: $orange;
 }
 
 .bm-item:focus {
@@ -41,9 +19,9 @@ body {
   position: fixed;
   width: 36px;
   height: 30px;
-  right: 36px;
+  right: 25px;
   transition: transform 1s;
-  top: 36px;
+  top: 25px;
 }
 
 .bm-burger-button:hover {
@@ -52,7 +30,7 @@ body {
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #a3195b;
+  background: $purple;
 }
 
 /* Position and sizing of clickable cross button */
@@ -63,12 +41,12 @@ body {
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: white;
+  background: $white;
 }
 
 /* General sidebar styles */
 .bm-menu {
-  background: #a3195b;
+  background: $purple;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }

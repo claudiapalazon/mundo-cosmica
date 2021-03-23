@@ -1,16 +1,23 @@
 import React from "react";
 import Chatbot from "./cosmica/Chatbot";
+import FirstMessage from "./cosmica/FirstMessage";
 
 const Cosmica = (props) => {
   return (
-    <article>
-      <p>Bienvenidas al universo de la mujer</p>
-      <Chatbot
-        chatbotField={props.chatbotField}
-        handleChatbotField={props.handleChatbotField}
-        groupName={props.groupName}
-        handleGroupName={props.handleGroupName}
-      />
+    <article className="home">
+      <div className="home-image"></div>
+      {props.firstMessage ? (
+        <FirstMessage handleFirstMessage={props.handleFirstMessage} />
+      ) : (
+        <div className="home-chatbot">
+          <Chatbot
+            chatbotField={props.chatbotField}
+            handleChatbotField={props.handleChatbotField}
+            groupName={props.groupName}
+            handleGroupName={props.handleGroupName}
+          />
+        </div>
+      )}
     </article>
   );
 };

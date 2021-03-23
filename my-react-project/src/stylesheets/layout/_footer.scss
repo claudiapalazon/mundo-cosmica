@@ -1,0 +1,38 @@
+.footer {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  justify-content: space-between;
+  border-top: 1px solid $purple;
+  background-color: $white;
+  height: 5%;
+  @media all and (max-width: 850px) {
+    background-color: $purple;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+    height: auto;
+  }
+  &--copy {
+    color: $purple;
+    font-size: 12px;
+    margin-left: 20px;
+    @media all and (max-width: 850px) {
+      color: $orange;
+      margin-left: 0px;
+      margin-bottom: 10px;
+    }
+  }
+  &--buy {
+    color: $purple;
+    font-size: 12px;
+    margin-right: 20px;
+    @media all and (max-width: 850px) {
+      color: $white;
+      margin: 0 7px 0 7px;
+    }
+  }
+}

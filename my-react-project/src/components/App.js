@@ -6,13 +6,20 @@ import Instructions from "./Instructions";
 import Play from "./Play";
 import Cosmica from "./Cosmica";
 import Header from "./Header";
-import "./styles.css";
+import "../stylesheets/App.scss";
+import Footer from "./Footer";
+import Elements from "./Elements";
 
 function App() {
   let arr = JSON.parse(JSON.stringify(questions));
+  const [firstMessage, setFirstMessage] = useState(true);
   const [arrFiltered, setQuestion] = useState(arr);
   const [chatbotField, setChatbotField] = useState(1);
   const [groupName, setGroupName] = useState("Compañeras");
+
+  const handleFirstMessage = () => {
+    setFirstMessage(false);
+  };
 
   const handleQuestions = () => {
     let arrQuestions = JSON.parse(JSON.stringify(questions));
@@ -36,6 +43,7 @@ function App() {
           pageWrapId={"page-wrap"}
           outerContainerId={"App"}
         />
+        <Elements />
         <div id="page-wrap">
           <Switch>
             <Route exact path="/">
@@ -44,6 +52,8 @@ function App() {
                 handleChatbotField={handleChatbotField}
                 groupName={groupName}
                 handleGroupName={handleGroupName}
+                firstMessage={firstMessage}
+                handleFirstMessage={handleFirstMessage}
               />
             </Route>
             <Route path="/instrucciones">
@@ -54,6 +64,7 @@ function App() {
             </Route>
           </Switch>
         </div>
+        <Footer />
       </div>
     </>
   );
