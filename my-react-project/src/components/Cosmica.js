@@ -5,7 +5,7 @@ import FirstMessage from "./cosmica/FirstMessage";
 const Cosmica = (props) => {
   return (
     <article className="home">
-      <div className="home-image"></div>
+      <div className="home-image scale-up-hor-left"></div>
       {props.firstMessage ? (
         <FirstMessage handleFirstMessage={props.handleFirstMessage} />
       ) : (
