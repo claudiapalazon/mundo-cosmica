@@ -13,13 +13,10 @@ const Header = (props) => {
         <Link
           className="menu-item"
           // target="_blank"
-          to="/instrucciones"
-          title="Instrucciones"
+          to="/quienes-somos"
+          title="Quiénes somos"
         >
-          Instrucciones
-        </Link>
-        <Link className="menu-item" to="/jugar" title="Jugar a Cósmica">
-          Jugar
+          Quiénes somos
         </Link>
       </Menu>
     </>

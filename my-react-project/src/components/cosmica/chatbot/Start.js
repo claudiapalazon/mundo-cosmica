@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import pdf from "./Instrucciones.pdf";
 
 const Start = (props) => {
   const handleMoment = () => {
@@ -8,13 +8,10 @@ const Start = (props) => {
   return (
     <section>
       <p>{`${props.groupName}, necesitáis un juego de mesa`}</p>
-      <p>Necesitas un juego de mesa</p>
-      <Link to="/instrucciones" title="Instrucciones">
-        Instrucciones
-      </Link>
-      <Link onClick={handleMoment} to="/jugar" title="Jugar a Cósmica">
-        Jugar
-      </Link>
+      <a href={pdf} download="Instrucciones Cósmica">
+        Descargar
+      </a>
+      <button onClick={handleMoment}>Jugar</button>
     </section>
   );
 };

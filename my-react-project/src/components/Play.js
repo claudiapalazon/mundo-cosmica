@@ -1,7 +1,7 @@
 import React, { useState } from "react";
+import Logo from "./Logo";
 import Quiz from "./Play/Quiz";
 import Result from "./Play/Result";
-// import { Route, Switch } from "react-router-dom";
 
 const Play = (props) => {
   let arr = props.arr;

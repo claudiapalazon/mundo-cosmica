@@ -1,9 +1,11 @@
 import React from "react";
+import Logo from "./Logo";
 
 const Instructions = () => {
   return (
     <article>
-      <p>Instrucciones</p>
+      <Logo />
+      <p>Quiénes somos</p>
     </article>
   );
 };

@@ -11,10 +11,13 @@ const Cosmica = (props) => {
       ) : (
         <div className="home-chatbot">
           <Chatbot
+            handleFirstMessage={props.handleFirstMessage}
             chatbotField={props.chatbotField}
             handleChatbotField={props.handleChatbotField}
             groupName={props.groupName}
             handleGroupName={props.handleGroupName}
+            arr={props.arr}
+            handleQuestions={props.handleQuestions}
           />
         </div>
       )}

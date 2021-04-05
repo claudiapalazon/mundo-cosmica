@@ -3,7 +3,7 @@ import logo from "../../images/cosmica.png";
 
 const FirstMessage = (props) => {
   const handleMoment = () => {
-    props.handleFirstMessage();
+    props.handleFirstMessage(false);
   };
 
   return (

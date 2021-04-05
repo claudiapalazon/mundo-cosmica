@@ -3,12 +3,11 @@ import { Route, Switch } from "react-router-dom";
 import React, { useState } from "react";
 import questions from "../services/questions.json";
 import Instructions from "./Instructions";
-import Play from "./Play";
+// import Play from "./Play";
 import Cosmica from "./Cosmica";
 import Header from "./Header";
 import "../stylesheets/App.scss";
 import Footer from "./Footer";
-import Elements from "./Elements";
 
 function App() {
   let arr = JSON.parse(JSON.stringify(questions));
@@ -17,8 +16,8 @@ function App() {
   const [chatbotField, setChatbotField] = useState(1);
   const [groupName, setGroupName] = useState("Compañeras");
 
-  const handleFirstMessage = () => {
-    setFirstMessage(false);
+  const handleFirstMessage = (option) => {
+    setFirstMessage(option);
   };
 
   const handleQuestions = () => {
@@ -43,7 +42,6 @@ function App() {
           pageWrapId={"page-wrap"}
           outerContainerId={"App"}
         />
-        <Elements />
         <div id="page-wrap">
           <Switch>
             <Route exact path="/">
@@ -54,14 +52,16 @@ function App() {
                 handleGroupName={handleGroupName}
                 firstMessage={firstMessage}
                 handleFirstMessage={handleFirstMessage}
+                arr={arrFiltered}
+                handleQuestions={handleQuestions}
               />
             </Route>
-            <Route path="/instrucciones">
+            <Route path="/quienes-somos">
               <Instructions />
             </Route>
-            <Route path="/jugar">
+            {/* <Route path="/jugar">
               <Play arr={arrFiltered} handleQuestions={handleQuestions} />
-            </Route>
+            </Route> */}
           </Switch>
         </div>
         <Footer />

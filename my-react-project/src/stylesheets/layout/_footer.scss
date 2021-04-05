@@ -8,6 +8,7 @@
   border-top: 1px solid $purple;
   background-color: $white;
   height: 5%;
+  min-height: 35px;
   @media all and (max-width: 850px) {
     background-color: $purple;
     flex-direction: column;

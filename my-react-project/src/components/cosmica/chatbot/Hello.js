@@ -4,9 +4,6 @@ const Hello = (props) => {
   const handleMoment = () => {
     props.handleChatbotField(2);
   };
-  const handleMoment3 = () => {
-    props.handleChatbotField(3);
-  };
   const handleName = (event) => {
     let name = event.target.value;
     props.handleGroupName(name);
@@ -16,8 +13,7 @@ const Hello = (props) => {
     <section>
       <p>Este es el párrafo de bienvenida</p>
       <input onChange={handleName} type="text" />
-      <button onClick={handleMoment3}>Si!</button>
-      <button onClick={handleMoment}>No</button>
+      <button onClick={handleMoment}>Siguiente</button>
     </section>
   );
 };
