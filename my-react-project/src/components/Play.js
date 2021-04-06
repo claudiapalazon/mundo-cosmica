@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Logo from "./Logo";
 import Quiz from "./Play/Quiz";
 import Result from "./Play/Result";
 
