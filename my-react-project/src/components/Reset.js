@@ -1,4 +1,5 @@
 import React from "react";
+import { FaRedoAlt } from "react-icons/fa";
 
 const Reset = (props) => {
   const handleMoment = () => {
@@ -8,9 +9,9 @@ const Reset = (props) => {
   };
 
   return (
-    <section>
-      <button onClick={handleMoment}>Reset</button>
-    </section>
+    <button className="reset" onClick={handleMoment}>
+      <FaRedoAlt className="reset-logo" />
+    </button>
   );
 };
 

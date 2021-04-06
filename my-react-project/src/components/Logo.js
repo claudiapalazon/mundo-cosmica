@@ -8,7 +8,7 @@ const Logo = () => {
         className="logo-image"
         src={cosmica}
         alt="Logo Cósmica"
-        Title="Hola, soy Cósmica"
+        title="Hola, soy Cósmica"
       />
     </section>
   );

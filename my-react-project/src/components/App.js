@@ -42,7 +42,7 @@ function App() {
           pageWrapId={"page-wrap"}
           outerContainerId={"App"}
         />
-        <div id="page-wrap">
+        <main id="page-wrap">
           <Switch>
             <Route exact path="/">
               <Cosmica
@@ -59,11 +59,8 @@ function App() {
             <Route path="/quienes-somos">
               <Instructions />
             </Route>
-            {/* <Route path="/jugar">
-              <Play arr={arrFiltered} handleQuestions={handleQuestions} />
-            </Route> */}
           </Switch>
-        </div>
+        </main>
         <Footer />
       </div>
     </>

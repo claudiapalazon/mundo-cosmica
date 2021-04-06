@@ -1,0 +1,33 @@
+.reset {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background-color: $orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 25px;
+  left: 61%;
+  color: $white;
+  border: 1px solid $orange;
+  background-color: $white;
+  color: $purple;
+  transition: ease-in 0.4s;
+  &-logo {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+  }
+  &:hover {
+    border: none;
+    background-color: $orange;
+    color: $white;
+  }
+  @media all and (max-width: 850px) {
+    left: 20px;
+    z-index: 99;
+  }
+}
