@@ -1,10 +1,10 @@
 import React from "react";
-import Logo from "./Logo";
+import Logo from "./details/Logo";
 
 const Instructions = () => {
   return (
     <article>
-      <Logo />
+      <Logo img="logo-image"/>
       <p>Quiénes somos</p>
     </article>
   );

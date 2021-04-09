@@ -8,16 +8,29 @@ const Chatbot = (props) => {
   if (props.chatbotField === 1) {
     return (
       <Hello
+        seconds={props.seconds}
+        playAnimation={props.playAnimation}
+        options={props.options}
         handleChatbotField={props.handleChatbotField}
         groupName={props.groupName}
         handleGroupName={props.handleGroupName}
       />
     );
   } else if (props.chatbotField === 2)
-    return <Project handleChatbotField={props.handleChatbotField} />;
+    return (
+      <Project
+        seconds={props.seconds}
+        playAnimation={props.playAnimation}
+        options={props.options}
+        handleChatbotField={props.handleChatbotField}
+      />
+    );
   else if (props.chatbotField === 3)
     return (
       <Start
+        seconds={props.seconds}
+        playAnimation={props.playAnimation}
+        options={props.options}
         handleChatbotField={props.handleChatbotField}
         groupName={props.groupName}
       />

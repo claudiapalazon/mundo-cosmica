@@ -1,21 +1,18 @@
 import React from "react";
-import logo from "../../images/cosmica.png";
+import Logo from "../details/Logo";
 
 const FirstMessage = (props) => {
   const handleMoment = () => {
+    props.playAnimation();
     props.handleFirstMessage(false);
   };
 
   return (
     <section className="home-firstmessage">
-      <div className="home-firstmessage_logo shadow-drop-center">
-        <img
-          className="home-firstmessage_logo-image"
-          src={logo}
-          alt="Logo de Cósmica"
-          title="Hola, Soy Cósmica"
-        />
-      </div>
+      <Logo
+        section="home-firstmessage_logo shadow-drop-center"
+        img="home-firstmessage_logo-image"
+      />
       <p className="home-firstmessage_text">Bienvenidas Compañeras</p>
       <button className="home-firstmessage_button" onClick={handleMoment}>
         Empezar

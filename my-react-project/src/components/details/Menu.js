@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { slide as Menu } from "react-burger-menu";
 
-const Header = (props) => {
+const MenuItem = (props) => {
   return (
     <>
       <Menu {...props}>
@@ -23,4 +23,4 @@ const Header = (props) => {
   );
 };
 
-export default Header;
+export default MenuItem;

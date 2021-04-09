@@ -1,11 +1,11 @@
 import React from "react";
-import cosmica from "../images/cosmica.png";
+import cosmica from "../../images/cosmica.png";
 
-const Logo = () => {
+const Logo = (props) => {
   return (
-    <section>
+    <section className={props.section}>
       <img
-        className="logo-image"
+        className={props.img}
         src={cosmica}
         alt="Logo Cósmica"
         title="Hola, soy Cósmica"
