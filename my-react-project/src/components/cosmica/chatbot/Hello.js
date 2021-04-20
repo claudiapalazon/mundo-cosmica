@@ -7,10 +7,6 @@ const Hello = (props) => {
     props.playAnimation();
     props.handleChatbotField(2);
   };
-  const handleName = (event) => {
-    let name = event.target.value;
-    props.handleGroupName(name);
-  };
 
   return (
     <section className="chat">
@@ -25,14 +21,15 @@ const Hello = (props) => {
         </div>
       ) : (
         <div>
-          {/* <div className="chat-divText"> */}
           <p className="chat-divText">
-            Bienvenidas Compañeras. Soy Cósmica, y si habéis llegado aquí es
-            porque habéis oído hablar de mi juego de mesa. ¿Verdad?
+            Bienvenidas Compañeras. Mi nombre es Cósmica y voy a ser vuestra
+            guía en este viaje feminista en el que recorreremos las opresiones
+            de la mujer a lo largo de la historia.
           </p>
           <p className="chat-divText">
-            Antes de empezar, me encantaría saber cómo os llamáis. Podéis
-            escoger un nombre de equipo si os apetece :)
+            Para ello, es importante vuestra participación como equipo, ya que
+            será un recorrido activo y cooperativo donde aprender y crecer
+            juntas.
           </p>
           {/* </div> */}
           <div className="avatar-left">
@@ -40,12 +37,6 @@ const Hello = (props) => {
             <p className="avatar-left-text">Compañeras</p>
           </div>
           <section className="chat-response">
-            <input
-              className="input"
-              onChange={handleName}
-              type="text"
-              placeholder="Compañeras"
-            />
             <button className="button" onClick={handleMoment}>
               Siguiente
             </button>

@@ -8,20 +8,44 @@ const Start = (props) => {
     props.handleChatbotField(4);
   };
   return (
-    <>
-      {/* <Logo /> */}
+    <section className="chat">
+      <div className="avatar">
+        <Logo section="hello-img-section" img="hello-img-section-detail" />
+        <p className="avatar-text">Cósmica</p>
+      </div>
       {props.seconds ? (
-        <Lottie options={props.options} height={50} width={50} />
+        <div className="chat-load">
+          <Lottie options={props.options} height={40} width={40} />
+        </div>
       ) : (
-        <section>
-          <p>{`${props.groupName}, necesitáis un juego de mesa`}</p>
-          <a href={pdf} download="Instrucciones Cósmica">
-            Descargar
-          </a>
-          <button onClick={handleMoment}>Jugar</button>
-        </section>
+        <div>
+          <p className="chat-divText">{`${props.groupName}, recordad que para embarcaros en esta aventura necesitáis el juego de mesa. Si aún no lo tenéis, lo podéis conseguir aquí:`}</p>
+          <p className="chat-divText">
+            Importante, no perdáis de vista la misión: ¡Llegar todas vivas al
+            final del tablero! Si lo necesitáis, podéis echar un vistazo a las
+            instrucciones antes de empezar.
+          </p>
+          <div className="avatar-left">
+            <Logo section="hello-img-section" img="hello-img-section-detail" />
+            <p className="avatar-left-text">{props.groupName}</p>
+          </div>
+          <section className=" chat-response">
+            <a
+              href={pdf}
+              title="Descargar instrucciones"
+              alt="Descargar instrucciones"
+              download="Instrucciones Cósmica"
+              className="button-instructions"
+            >
+              Descargar Instrucciones
+            </a>
+            <button className="button" onClick={handleMoment}>
+              Jugar
+            </button>
+          </section>
+        </div>
       )}
-    </>
+    </section>
   );
 };
 

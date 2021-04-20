@@ -13,7 +13,6 @@ const Chatbot = (props) => {
         options={props.options}
         handleChatbotField={props.handleChatbotField}
         groupName={props.groupName}
-        handleGroupName={props.handleGroupName}
       />
     );
   } else if (props.chatbotField === 2)
@@ -22,7 +21,9 @@ const Chatbot = (props) => {
         seconds={props.seconds}
         playAnimation={props.playAnimation}
         options={props.options}
+        groupName={props.groupName}
         handleChatbotField={props.handleChatbotField}
+        handleGroupName={props.handleGroupName}
       />
     );
   else if (props.chatbotField === 3)

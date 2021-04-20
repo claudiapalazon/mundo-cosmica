@@ -20,7 +20,7 @@ const Cosmica = (props) => {
     console.log("paso por aqui");
     setTimeout(() => {
       setSeconds(false);
-    }, 4000);
+    }, 3000);
   };
 
   return (
