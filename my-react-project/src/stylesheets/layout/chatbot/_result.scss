@@ -1,0 +1,42 @@
+.result {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &-true,
+  &-false {
+    color: $purple;
+    font-size: 20px;
+  }
+  &-nextButton {
+    z-index: 99;
+    cursor: pointer;
+    margin-top: 40px;
+    width: 130px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid $orange;
+    background-color: $orange;
+    color: $white;
+    font-size: 13px;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.15);
+    &:hover {
+      background-color: $white;
+      color: $purple;
+    }
+  }
+  &-finishButton {
+    z-index: 99;
+    cursor: pointer;
+    margin-top: 20px;
+    border-style: none;
+    color: $purple;
+    background-color: $white;
+    border-bottom: 1px solid $purple;
+    &:hover {
+      border-bottom: 1px solid $orange;
+    }
+  }
+}
