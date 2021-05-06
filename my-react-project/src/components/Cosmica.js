@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import image from "../images/historia.jpg";
 import animationData from "./animations/wait.json";
 import Chatbot from "./cosmica/Chatbot";
 import FirstMessage from "./cosmica/FirstMessage";
@@ -27,7 +28,9 @@ const Cosmica = (props) => {
     <>
       <Social />
       <article className="home">
-        <div className="home-image scale-up-hor-left"></div>
+        <div className="home-image scale-up-hor-left">
+          <img className="home-image-illus" src={image} alt="Mundo Cósmica" />
+        </div>
 
         {props.firstMessage ? (
           <FirstMessage

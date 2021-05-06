@@ -5,7 +5,7 @@ import pdf from "./data/Instrucciones.pdf";
 
 const Start = (props) => {
   const handleMoment = () => {
-    props.handleChatbotField(4);
+    props.handleChatbotField(5);
   };
   return (
     <section className="chat">
@@ -19,11 +19,13 @@ const Start = (props) => {
         </div>
       ) : (
         <div>
-          <p className="chat-divText">{`${props.groupName}, recordad que para embarcaros en esta aventura necesitáis el juego de mesa. Si aún no lo tenéis, lo podéis conseguir aquí:`}</p>
           <p className="chat-divText">
-            Importante, no perdáis de vista la misión: ¡Llegar todas vivas al
-            final del tablero! Si lo necesitáis, podéis echar un vistazo a las
-            instrucciones antes de empezar.
+            Importante, no perdáis de vista vuestra misión: ¡Llegar todas vivas
+            al final del tablero!
+          </p>
+          <p className="chat-divText">
+            Si lo necesitáis, podéis echar un vistazo a las instrucciones antes
+            de empezar.
           </p>
           <div className="avatar-left">
             <Logo section="hello-img-section" img="hello-img-section-detail" />

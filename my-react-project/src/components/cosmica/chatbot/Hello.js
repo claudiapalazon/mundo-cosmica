@@ -22,19 +22,18 @@ const Hello = (props) => {
       ) : (
         <div>
           <p className="chat-divText">
-            Bienvenidas Compañeras. Mi nombre es Cósmica y voy a ser vuestra
+            Bienvenidas Compañeras, mi nombre es Cósmica y voy a ser vuestra
             guía en este viaje feminista en el que recorreremos las opresiones
             de la mujer a lo largo de la historia.
           </p>
           <p className="chat-divText">
-            Para ello, es importante vuestra participación como equipo, ya que
-            será un recorrido activo y cooperativo donde aprender y crecer
-            juntas.
+            Lo primero que debéis saber es que para embarcaros en esta aventura
+            necesitáis el juego de mesa. Si aún no lo tenéis, lo podéis
+            conseguir aquí:
           </p>
-          {/* </div> */}
           <div className="avatar-left">
             <Logo section="hello-img-section" img="hello-img-section-detail" />
-            <p className="avatar-left-text">Compañeras</p>
+            <p className="avatar-left-text">{props.groupName}</p>
           </div>
           <section className="chat-response">
             <button className="button" onClick={handleMoment}>
