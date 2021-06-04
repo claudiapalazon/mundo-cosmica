@@ -1,15 +1,15 @@
 .reset {
   cursor: pointer;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   border: none;
   background-color: $orange;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  top: 25px;
+  position: absolute;
+  top: 20px;
   left: 61%;
   color: $white;
   border: 1px solid $orange;
@@ -17,8 +17,8 @@
   color: $purple;
   transition: ease-in 0.4s;
   &-logo {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     cursor: pointer;
   }
   &:hover {
