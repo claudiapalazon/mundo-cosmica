@@ -13,7 +13,7 @@ const Social = () => {
             title="Facebook de Cósmica"
             alt="facebook"
           >
-            <div className="social-icon">
+            <div className="social-icon fa">
               <FaFacebook className="social-icon-detail" />
             </div>
           </a>
@@ -25,7 +25,7 @@ const Social = () => {
             title="Instagram de Cósmica"
             alt="Instagram"
           >
-            <div className="social-icon">
+            <div className="social-icon ins">
               <FaInstagram className="social-icon-detail" />
             </div>
           </a>
