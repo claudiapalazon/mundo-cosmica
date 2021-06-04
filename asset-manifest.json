@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/mundo-cosmica/static/css/main.f25e23d0.chunk.css",
-    "main.js": "/mundo-cosmica/static/js/main.07ae47d4.chunk.js",
-    "main.js.map": "/mundo-cosmica/static/js/main.07ae47d4.chunk.js.map",
+    "main.css": "/mundo-cosmica/static/css/main.68b2cfe8.chunk.css",
+    "main.js": "/mundo-cosmica/static/js/main.9da4168b.chunk.js",
+    "main.js.map": "/mundo-cosmica/static/js/main.9da4168b.chunk.js.map",
     "runtime-main.js": "/mundo-cosmica/static/js/runtime-main.4ac541a4.js",
     "runtime-main.js.map": "/mundo-cosmica/static/js/runtime-main.4ac541a4.js.map",
     "static/js/2.1898f59d.chunk.js": "/mundo-cosmica/static/js/2.1898f59d.chunk.js",
     "static/js/2.1898f59d.chunk.js.map": "/mundo-cosmica/static/js/2.1898f59d.chunk.js.map",
     "index.html": "/mundo-cosmica/index.html",
-    "static/css/main.f25e23d0.chunk.css.map": "/mundo-cosmica/static/css/main.f25e23d0.chunk.css.map",
+    "static/css/main.68b2cfe8.chunk.css.map": "/mundo-cosmica/static/css/main.68b2cfe8.chunk.css.map",
     "static/js/2.1898f59d.chunk.js.LICENSE.txt": "/mundo-cosmica/static/js/2.1898f59d.chunk.js.LICENSE.txt",
     "static/media/Instrucciones.1f91060e.pdf": "/mundo-cosmica/static/media/Instrucciones.1f91060e.pdf",
     "static/media/cosmica.8d71e54b.png": "/mundo-cosmica/static/media/cosmica.8d71e54b.png",
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.4ac541a4.js",
     "static/js/2.1898f59d.chunk.js",
-    "static/css/main.f25e23d0.chunk.css",
-    "static/js/main.07ae47d4.chunk.js"
+    "static/css/main.68b2cfe8.chunk.css",
+    "static/js/main.9da4168b.chunk.js"
   ]
 }
