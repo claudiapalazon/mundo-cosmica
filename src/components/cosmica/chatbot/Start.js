@@ -32,15 +32,16 @@ const Start = (props) => {
             <p className="avatar-left-text">{props.groupName}</p>
           </div>
           <section className=" chat-response">
-            <a
+            {/* <a
               href={pdf}
               title="Descargar instrucciones"
               alt="Descargar instrucciones"
               download="Instrucciones Cósmica"
               className="button-instructions"
-            >
-              Descargar Instrucciones
-            </a>
+            > */}
+            {/* Descargar Instrucciones
+            </a> */}
+            <p className="button-instructions">Descargar Instrucciones</p>
             <button className="button" onClick={handleMoment}>
               Jugar
             </button>
